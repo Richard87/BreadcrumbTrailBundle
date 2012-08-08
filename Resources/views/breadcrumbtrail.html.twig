@@ -1,0 +1,22 @@
+{%- if breadcrumbs.count %}
+  <ul class="breadcrumb">
+  {% for breadcrumb in breadcrumbs %}
+    {%- if loop.first %}
+        <li class="home">
+    {%- elseif loop.last %}
+        <li class="current">
+    {%- else %}
+        <li>
+    {%- endif %}
+    {%- if breadcrumb.url is null or loop.last -%}
+        {{ breadcrumb.title|trans }}
+    {%- else -%}
+        <a href="{{ breadcrumb.url }}">{{ breadcrumb.title|trans }}</a>
+    {%- endif -%}
+    </li>
+    {% if not loop.last %}
+        <span class="divider">/</span>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{%- endif -%}
