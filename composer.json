@@ -17,9 +17,9 @@
     "fzaninotto/faker": "dev-master"
   },
   "autoload": {
-    "psr-0": { "Tactics\\BreadcrumbTrailBundle": "" }
+    "psr-0": { "Tactics\\Bundle\\BreadcrumbTrailBundle": "" }
   },
-  "target-dir": "Tactics/BreadcrumbTrailBundle",
+  "target-dir": "Tactics/Bundle/BreadcrumbTrailBundle",
   "minimum-stability": "dev"
 }
 
