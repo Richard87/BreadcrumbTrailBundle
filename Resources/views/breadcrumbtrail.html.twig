@@ -1,9 +1,11 @@
 {%- if breadcrumbs.count %}
   <ul class="breadcrumb">
+     <li class="home">
+        <a href="{{ path("home") }}">{{ "Home"|trans }}</a>
+    </li>
+    <span class="divider">/</span>
   {% for breadcrumb in breadcrumbs %}
-    {%- if loop.first %}
-        <li class="home">
-    {%- elseif loop.last %}
+    {%- if loop.last %}
         <li class="current">
     {%- else %}
         <li>
