@@ -9,8 +9,7 @@
     "email": "gert@tactics.be"
   }],
   "require": {
-    "symfony/symfony": "2.1.*",
-    "propel/propel1": "1.6.*",
+    "symfony/symfony": "2.3.*",
     "apy/breadcrumbtrail-bundle": "dev-master"
 
   },
