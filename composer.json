@@ -9,7 +9,8 @@
     "email": "gert@tactics.be"
   }],
   "require": {
-    "apy/breadcrumbtrail-bundle": "v1.3"
+    "symfony/symfony": "~2.3",
+    "apy/breadcrumbtrail-bundle": "v1.4.*"
   },
   "autoload": {
     "psr-0": { "Tactics\\Bundle\\BreadcrumbTrailBundle": "" }
