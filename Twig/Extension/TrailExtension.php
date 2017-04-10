@@ -42,7 +42,7 @@ class TrailExtension extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            "tactics_trail_render" => new \Twig_Function_Method($this, "renderTrail", array("is_safe" => array("html"))),
+            new \Twig_SimpleFunction("tactics_trail_render", [$this, "renderTrail"], array("is_safe" => array("html"))),
         );
     }
 

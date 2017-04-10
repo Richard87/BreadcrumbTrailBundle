@@ -9,7 +9,8 @@
     "email": "gert@tactics.be"
   }],
   "require": {
-    "apy/breadcrumbtrail-bundle": "1.4.*"
+    "apy/breadcrumbtrail-bundle": "1.4.*",
+    "twig/twig": "^2.0"
   },
   "autoload": {
     "psr-0": { "Tactics\\Bundle\\BreadcrumbTrailBundle": "" }
